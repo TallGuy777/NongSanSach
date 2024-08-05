@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF">
+
+            <RelativeLayout
+                android:id="@+id/dangnhap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/recyler_view"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/imgViewSP"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:foregroundGravity="center"
+                    android:src="@drawable/tradau" />
+
+                <TextView
+                    android:id="@+id/tvTenSP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toEndOf="@+id/imgViewSP"
+                    android:layout_toRightOf="@+id/imgViewSP"
+                    android:hint="Tên nước uống"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvGiaBanSP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvTenSP"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toEndOf="@id/imgViewSP"
+                    android:layout_toRightOf="@id/imgViewSP"
+                    android:hint="Giá nước"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:id="@+id/llSoLuong"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imgViewSP"
+                    android:orientation="horizontal"
+                    android:paddingTop="8dp">
+
+                    <TextView
+                        android:id="@+id/tvSoLuongSP"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:text="Số lượng:"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btnGiam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:text="-"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:focusable="false" />
+
+                    <TextView
+                        android:id="@+id/tvSoLuongValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:text="0"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginEnd="4dp"
+                        android:layout_marginRight="4dp" />
+
+                    <Button
+                        android:id="@+id/btnTang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:text="+"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:focusable="false" />
+                    <!-- Icon "Thêm vào giỏ hàng" -->
+                    <ImageView
+                        android:id="@+id/imgAddToCart"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_below="@id/llSoLuong"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@+id/btnTang"
+                        android:contentDescription="Thêm vào giỏ hàng"
+                        android:src="@drawable/baseline_add_shopping_cart_24" />
+                </LinearLayout>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>

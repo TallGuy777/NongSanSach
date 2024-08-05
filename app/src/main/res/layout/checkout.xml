@@ -1,0 +1,83 @@
+<!-- checkout_layout.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Tiêu đề trang -->
+    <TextView
+        android:id="@+id/checkout_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thanh toán"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Phương thức thanh toán -->
+    <RadioGroup
+        android:id="@+id/payment_method_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkout_title"
+        android:orientation="vertical"
+        android:layout_marginBottom="24dp">
+
+        <!-- Thanh toán bằng thẻ -->
+        <RadioButton
+            android:id="@+id/payment_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thanh toán bằng thẻ tín dụng"
+            android:textSize="18sp" />
+
+        <!-- Thanh toán khi giao hàng -->
+        <RadioButton
+            android:id="@+id/payment_cod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thanh toán khi nhận hàng"
+            android:textSize="18sp" />
+
+        <!-- Thanh toán qua PayPal -->
+        <RadioButton
+            android:id="@+id/payment_paypal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thanh toán qua PayPal"
+            android:textSize="18sp" />
+
+    </RadioGroup>
+
+    <!-- Hiển thị tổng tiền -->
+    <TextView
+        android:id="@+id/total_price_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tổng tiền:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/payment_method_group"
+        android:layout_marginTop="24dp"/>
+
+    <TextView
+        android:id="@+id/tongtien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_below="@id/total_price_label"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Nút thanh toán -->
+    <Button
+        android:id="@+id/checkout_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đặt hàng"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:backgroundTint="#3FC979"
+        android:layout_below="@id/tongtien" />
+
+</RelativeLayout>

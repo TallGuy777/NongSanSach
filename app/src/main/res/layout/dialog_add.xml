@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background=" #3FC979"
+        android:padding="25dp"
+        android:text="Thêm sản phẩm "
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtTenSPAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_add_to_home_screen"
+            android:drawablePadding="10dp"
+            android:hint="Tên nước uống"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:layout_marginTop="20dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtGiaBanAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_attach_money"
+            android:drawablePadding="10dp"
+            android:hint="Giá nước"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="215dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:backgroundTint="#3FC979"
+                android:text="Thêm"
+                android:textAllCaps="true"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtSoLuongEdit"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                />
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtSoLuongAdd"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnCancelAdd"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Hủy"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:backgroundTint="#3FC979"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <EditText
+            android:id="@+id/edtURL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="Dán link URL của ảnh" />
+
+        <Button
+            android:id="@+id/btnInsertImage"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edtURL"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#3FC979"
+            android:text="Tải ảnh"
+            android:textAllCaps="true"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imgAdd"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/edtURL"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</LinearLayout>

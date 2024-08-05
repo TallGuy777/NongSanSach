@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">NSS</string>
+    <string name="open" />
+    <string name="close" />
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="gi_20000">Giá: 20000 đ</string>
+    <string name="th_m_v_o_gi_h_ng">Thêm vào giỏ hàng</string>
+</resources>

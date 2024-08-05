@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/qlsp"
+        android:icon="@drawable/ic_approval"
+        android:title="Quản lý sản phẩm"/>
+
+    <group android:checkableBehavior="single">
+        <item android:title="Khác">
+            <menu>
+                <item
+                    android:id="@+id/setting"
+                    android:icon="@drawable/ic_settings_suggest"
+                    android:title="Setting"/>
+                <item
+                    android:id="@+id/logOut"
+                    android:icon="@drawable/ic_logout"
+                    android:title="Logout"/>
+            </menu>
+        </item>
+    </group>
+</menu>

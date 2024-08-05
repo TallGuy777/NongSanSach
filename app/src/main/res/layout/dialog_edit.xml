@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background=" #3FC979"
+        android:padding="25dp"
+        android:text="Chỉnh sửa sản phẩm "
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:layout_marginTop="20dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtTenSPEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tên nước uống "
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:inputType="text"
+            android:drawableLeft="@drawable/ic_add_to_home_screen"
+            android:drawablePadding="10dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:layout_marginTop="20dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtGiaBanEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Giá nước "
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:inputType="number"
+            android:drawableLeft="@drawable/ic_attach_money"
+            android:drawablePadding="10dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtSoLuongEdit"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:layout_marginTop="20dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtLinkEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Link Image"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:inputType="text"
+            android:drawableLeft="@drawable/ic_insert_link"
+            android:drawablePadding="10dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#3FC979"
+            android:layout_marginRight="10dp"
+            android:text="update"
+            android:textAllCaps="true"
+            android:layout_marginBottom="10dp"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="#3FC979"
+            android:text="cancel"
+            android:textAllCaps="true"
+            android:layout_marginBottom="10dp"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
